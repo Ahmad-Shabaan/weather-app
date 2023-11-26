@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/globals.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+    </header>
+    <main>
+      <section>
+        <input type="text" id="city" placeholder="Enter city name" />
+        <button id="search">
+          <iconify-icon icon="octicon:search-16"></iconify-icon>
+        </button>
+        <div id="error">
+          <p>Invalid city name</p>
+        </div>
+        <div id="weatherData">
+          <iconify-icon icon="" id="weatherIcon"></iconify-icon>
+          <div id="temp">22°C</div>
+          <div id="cityName">New York</div>
+          <div id="details">
+            <div class="col">
+              <iconify-icon id="humidityIcon" icon="mdi:waves"></iconify-icon>
+              <div>
+                <p class="humidity">50%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <iconify-icon
+                id="windIcon"
+                icon="solar:wind-broken"
+              ></iconify-icon>
+              <div>
+                <p class="wind">15 km/h</p>
+                <p>Wind speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside></aside>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
